@@ -1,0 +1,146 @@
+.wrapper {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .listButton {
+    background-color: #6a6d80;
+    color: white;
+    padding: 9px 15px;
+    width: 80px;
+    height: 38px;
+    border-radius: 5px;
+    border: solid;
+    &:hover {
+      background-color: #3f424edb;
+      cursor: pointer;
+    }
+  }
+
+  section {
+    border-top: 2px solid rgb(128, 128, 128);
+    border-bottom: 1px solid rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+      background-color: #edf1f7;
+      display: block;
+      border-bottom: 1px solid rgb(190, 190, 190);
+      box-sizing: border-box;
+      margin: 0;
+      padding: 15px 20px;
+    }
+    .explainContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      padding-left: 0;
+
+      .flex {
+        display: flex;
+        .contentName {
+          font-style: normal;
+          font-size: 14px;
+          line-height: 17px;
+          white-space: break-spaces;
+          color: rgb(51, 51, 51);
+          font-weight: 700;
+          margin-left: 20px;
+        }
+        .content {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          white-space: break-spaces;
+          color: rgb(51, 51, 51);
+          margin-left: 5px;
+          .clockIcon {
+            vertical-align: middle;
+            margin: 0px 2px;
+            width: 13px;
+          }
+        }
+      }
+    }
+    article {
+      padding: 20px;
+      border-top: solid 1px #cccccc;
+      font-size: 15px;
+    }
+    .buttons {
+      margin-left: auto;
+      display: flex;
+      margin-bottom: 20px;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(119, 119, 119);
+        color: rgb(0, 0, 0);
+        margin-left: 5px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(0, 93, 198);
+          border: 1px solid rgb(0, 93, 198);
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .previousContainer {
+      border: solid #cccccc;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 20px;
+      height: 50px;
+      border: 1px solid rgb(204, 204, 204);
+      .previous {
+        display: flex;
+        padding: 0 20px;
+        width: 90px;
+        align-items: center;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        background-color: rgb(249, 249, 249);
+        border-radius: 5px 0px 0px 5px;
+        border-right: 1px solid rgb(204, 204, 204);
+      }
+      .previousTitle {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 17px 20px;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .literalTitle {
+          text-align: left;
+          text-decoration: none;
+        }
+        .commentCount {
+          color: #167ef4;
+          padding-left: 3px;
+        }
+      }
+    }
+  }
+}
